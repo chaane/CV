@@ -1,255 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Resume</title>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </nav>
-    <style>
-        nav {
-            background-color: #333;
-            overflow: hidden;
-          }
-          
-          nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            text-align: center;
-          }
-          
-          nav li {
-            float: left;
-          }
-          
-          nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            
-          }
-          
-          nav li a:hover {
-            background-color: #111;
-          }
-          
-        body {
-          background-image: url(background.jpg);
-          background-size: cover;
-          background-repeat: no-repeat;
-          height: 100%;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-        }
-        
-      </style>        
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Hlalele Chaane - I'm a Graduate Software Developer.</title>
+  <meta name="title" content=">Hlalele Chaane - I'm a Graduate Software Developer">
+  <meta name="description" content="This is a personal portfolio ">
+
+  <!-- 
+    - favicon
+  -->
+ 
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/ana.jpeg.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+
 </head>
+
 <body>
-   <style>
-    body{
-        color: white;
-    }
-   </style>
-    <div class="profile-photo">
-        <img src="ana.jpeg.jpg" alt="Profile photo">
-        <style>.profile-photo img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            animation: spin 2s linear infinite;
-           
-          }
-          @keyframes spin {
-            from {
-              transform: rotate(0deg);
-            }
-            to {
-              transform: rotate(360deg);
-            }
-          }
-          .skills {
-            margin-top: 50px;
-          }
-          
-          .skills h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 30px;
-          }
-          
-          .skills ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
-          
-          .skills li {
-            margin-bottom: 20px;
-          }
-          
-          .skills li .skill {
-            display: flex;
-            align-items: center;
-          }
-          
-          .skills li .skill-name {
-            flex: 1;
-          }
-          
-          .skills li .star-rating {
-            display: flex;
-          }
-          
-          .skills li .star-rating .star {
-            font-size: 24px;
-            color: #ffdd00;
-            margin-right: 10px;
-          }
-          
-          .skills li .star-rating .star:last-child {
-            margin-right: 0;
-          }
-          
-          .skills li .star-rating .star.active {
-            color: #ffdd00;
-          }
-          
-          .social-media {
-            text-align: center;
-            margin-top: 50px;
-          }
-          
-          .social-media a {
-            display: inline-block;
-            margin: 0 10px;
-          }
-          
-          .social-media img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-          }
-          
-        </style>
-        
-      </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
       
-    <u><h1>Hlalele Elias Chaane </h1></u>
 
-    <i><p>Graduate/junior Software developer</p></i>
+      <nav class="navbar" data-navbar>
 
-    <p>I want to expand my knowledge of software development as a
-    newly graduated software developer. <br>I have a rapid rate of
-    learning, and I enjoy discovering new technological approaches
-    to problems. <br> I always do my best to complete tasks in a timely
-    manner and in a manner that is proper and understandable <br>
-i Enjoy back-end development and i do some projects to keep my skils sharp. </p>
-<hr>
-    <<h2>Education and Courses</h2>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="Hlalele home">
+          </a>
 
-    <ul>
-      <li>
-        <strong>Klerksdorp Technical High School</strong>, Northwest Province, South Africa<br>
-        National Senior Certificate (NSC)
-      </li>
-      <li>
-        <strong>Cape Peninsula University of Technology (CPUT)</strong>, Cape Town, South Africa<br>
-        Certificate in Cyber Security
-      </li>
-      <li>
-        <strong>CTU Training Solutions</strong>, Potchefstroom Campus, South Africa<br>
-        NQF 6 MCSD Software Engineering
-      </li>
-      <li>
-        <strong>Udemy Course</strong><br>
-        100 Days of Code - The Complete Python Pro Bootcamp
-      </li>
-    </ul>
-   
-    <div class="skills">
-       <u><h2>My Skills</h2></u>
-        <ul>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
           <li>
-            <span class="skill-name">HTML</span>
-            <div class="star-rating">
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9734;</span>
-            </div>
+            <a href="#" class="navbar-link">Home</a>
           </li>
-          <li>
-            <span class="skill-name">CSS</span>
-            <div class="star-rating">
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9734;</span>
-              <span class="star">&#9734;</span>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">JavaScript</span>
-            <div class="star-rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-              </li>
-              
-          <li>
 
-            <span class="skill-name">Python</span>
-                    <div class="star-rating">
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9734;</span>
-                    </div>
+          
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:Hlalelechaane@gmail.com" class="contact-link">Hlalelechaane@gmail.com</a>
+
+          <a href="tel:0651418247" class="contact-link">+27 65 141 8247</a>
+        </div>
+
+        <ul class="social-list">
+
+      
+          <li>
+            <a href="https://www.linkedin.com/in/hlalele-chaane-3453a823a/" class="social-link">
+              <ion-icon name="logo-Linkedin"></ion-icon>
+            </a>
           </li>
 
           <li>
-
-            <span class="skill-name">C# .net</span>
-                    <div class="star-rating">
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9734;</span>
-                    </div>
+            <a href="https://github.com/chaane" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
           </li>
-              
-          <li>
 
-            <span class="skill-name">MYSQL-MMSQL</span>
-                    <div class="star-rating">
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9734;</span>
-                    </div>
-          </li>      
-          <div class="social-media">
+        
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <figure class="Profile">
+            <img src="./assets/images/Farewell2-3.jpg" width="560" height="540" alt="Hlalele" class="w-100"
+              data-reveal="top">
+              <style> container { border-radius: 50%;}</style>
+
             
-            <a href="https://github.com/chaane"><img src="logos\GitHub-logo.jpg" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/hlalele-chaane-3453a823a/"><img src="logos\linkedin.png" alt="LinkedIn"></a>
-            
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              Im a JuniorSoftware developer.
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              I'm Hlalele Chaane, a Junior software developer based in Klerksdorp NorthWest . I’m very passionate
+              about the work that I do.
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="#" class="btn btn-primary">See My Works</a>
+
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+
           </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <style> p{color : white;}</style>
+              <h2 class="h2 section-title" >What I Do?</h2>
+
+              <p class="section-text">
+                Im passionate about software development I want to expand my knowledge of software development as a newly graduated software developer.
+                I have a rapid rate of learning, and I enjoy discovering new technological approaches to problems.
+                I always do my best to complete tasks in a timely manner and in a manner that is proper and understandable
+                i Enjoy back-end development and i do some projects to keep my skils sharp.
+              </p>
+            </div>
+
            
-            
+
+            <ul class="progress-list" data-reveal="right">
+              <h2 class="h2 section-title">My skils</h2>
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>HTML/CSS</p>
+
+                  <span class="span">100%</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 100%; background-color: #c7b1dd"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>Python</p>
+
+                  <span class="span">85%</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>c#/ .NET</p>
+
+                  <span class="span">70%</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
+                </div>
+
+              </li>
+
+              <li class="progress-item">
+
+                <div class="label-wrapper">
+                  <p>MYSQL-MMSQL</p>
+
+                  <span class="span">90 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 90%; background-color: #e3a6b6"></div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+              <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact">
+      
+
+        <h2 class="h2 section-title">Contact</h2>
+
+            <div class="contact-content" data-reveal="left">
+
+             
+
+              <h2 class="h2 section-title">If you like what you see, let's work together.</h2>
+
+              <p class="section-text">
+               Phone Number :+ 27 65 141 8247.<br>
+               Email Address: Hlalelechaane@gmail.com<br>
+               Social media platform.<br>
+              </p>
+              <li>
+                <a href="https://github.com/chaane" class="social-link">
+                  <img src="./assets/images/GitHub-logo.jpg" width="50";  height: 50px;  border-radius: 50%; alt="Github">
+                </a>
+                
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/hlalele-chaane-3453a823a/" class="social-link">
+                  <img src="./assets/images/linkedin.png"  width="50";  height: 50px;  border-radius: 50%;  alt="Linkedin">
+                </a>
+                
+              </li>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+ 
+
+
+
+
+
+
+
+  
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
